@@ -1,0 +1,89 @@
+section.title {
+  text-align: center;
+}
+
+section.contact {
+  margin-top: 3rem;
+}
+
+.contact-about p {
+  margin-top: 1rem;
+}
+
+.social-links {
+  margin-top: 2rem;
+}
+
+.social-links a {
+  text-decoration: none;
+}
+
+.social-links a + a {
+  margin-left: 2rem;
+}
+
+.social-links img {
+  width: 50px;
+}
+
+.info div + div {
+  margin-top: 1rem;
+}
+
+.info img {
+  width: 30px;
+  margin-right: 1rem;
+}
+
+.info a {
+  text-decoration: none;
+  color: var(--purple-800);
+}
+
+.info a:hover {
+  color: var(--purple-300);
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form div + div {
+  margin-top: 1rem;
+}
+
+form textarea {
+  resize: none;
+}
+
+form button.btn-submit {
+  margin-top: 1rem;
+  background-color: var(--purple-500);
+  border: none;
+  border-radius: 3px;
+  padding: 0.4rem;
+  color: var(--white);
+
+  font-weight: 700;
+
+  transition: 0.2s;
+}
+
+form button.btn-submit:hover {
+  filter: brightness(0.90);
+}
+
+@media (max-width: 991px) {
+  div.row div.colums + div {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  div.social-links {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../public/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/contato.css" />
+    <title>Push | Contato</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./lading-page.html"
+            ><img src="../../public/images/internet.svg" alt="Logotipo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarColor01"
+            aria-controls="navbarColor01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./lading-page.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#"
+                  >Contato
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="container title">
+        <h1>── CONTATO ──</h1>
+      </section>
+
+      <section class="container contact">
+        <div class="row">
+          <div class="col-lg-4 colums">
+            <div class="contact-about">
+              <h3>Push WebSystems</h3>
+              <p>
+                Somos uma empresa de tecnologia diferente. Entre em contato conosco
+                e confira.
+              </p>
+            </div>
+
+            <div class="social-links">
+              <a href="https://www.facebook.com/pushwebsystems" target="_blank">
+                <img src="../../public/images/facebook.svg" alt="Ícone facebook">
+              </a>
+              <a href="https://www.instagram.com/pushwebsystems/" target="_blank">
+                <img src="../../public/images/instagram.svg" alt="ícone instagram">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 colums">
+            <div class="info">
+              <div class="email">
+                <img src="../../public/images/email.svg" alt="Ícone email">
+                <a href="mailto:comercial@pushws.com.br">
+                  comercial@pushws.com.br
+                </a>
+              </div>
+              
+              <div class="phone-call">
+                <img src="../../public/images/phone-call.svg" alt="Ícone phone-call">
+                <a href="tel:2126411566">(21) 2641-1566</a>
+              </div>
+              
+              <div class="map">
+                <img src="../../public/images/map.svg" alt="Ícone map">
+                <a href="#">Teresópolis RJ - Brasil</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5 colums">
+            <form 
+              action="enviarformulario.php"
+              method="POST"
+              class="php-email-form"
+              id="formContato"
+            >
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Nome"
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <input
+                  class="form-control" 
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  placeholder="Telefone"
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <input 
+                  class="form-control"
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  placeholder="Título"
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  id="message"
+                  rows="5"
+                  placeholder="Mensagem"
+                  required
+                ></textarea>
+                
+              </div>
+              <button class="btn-submit" type="submit" data-action="submit">Enviar</button>
+            </form>
+          </div>
+        </section>
+        </div>
+    </main>
+
+    <footer>
+      <span>
+        Turma dos feras
+        <a href="http://serratec.org/" target="_blank">Serratec</a>
+      </span>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

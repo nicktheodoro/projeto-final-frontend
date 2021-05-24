@@ -1,0 +1,112 @@
+:root {
+  --white: #fff;
+
+  --gray-200: #afb2b1;
+  --gray-500: #808080;
+  --gray-800: #494d4b;
+
+  --purple-300: #9f75ff;
+  --purple-500: #8257e5;
+  --purple-800: #6f48c9;
+}
+
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  background: var(--gray-50);
+  padding-top: 6rem;
+
+  height: 100%;
+
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+header nav.navbar {
+  background-color: var(--purple-800);
+  font-weight: 700;
+  padding: 1rem;
+}
+
+header nav.navbar img {
+  width: 50px;
+  border: var(--white);
+}
+
+header div.collapse {
+  margin-left: 4rem;
+}
+
+header .navbar-collapse.collapse.show {
+  margin: 0;
+}
+
+body,
+input,
+textarea,
+button {
+  font-weight: 400;
+  color: var(--gray-500);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: var(--gray-800);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+main {
+  flex: 1;
+  max-width: 90%;
+  margin: 2rem auto 0 auto;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1.25rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--purple-800);
+}
+
+footer a:hover {
+  color: var(--purple-300);
+  text-decoration: underline;
+}

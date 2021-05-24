@@ -1,0 +1,61 @@
+main .title h1 {
+  text-align: center;
+}
+
+main .description {
+  padding: 0 1.4rem;
+  margin-top: 3rem;
+}
+
+main .description p {
+  text-align: center;
+}
+
+main .images {
+  margin-top: 5rem;
+}
+
+main div.card {
+  text-align: center;
+  border-radius: 5px;
+  height: 25rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+main div.card-body p {
+  margin-top: 1rem;
+}
+
+main div.card img {
+  width: 150px;
+  padding: 2rem;
+  border-bottom: solid thin var(--gray-200);
+}
+
+@media (max-width: 1000px) {
+  main div.card {
+    height: 30rem;
+  }
+}
+
+@media (max-width: 767px) {
+  main div.card {
+    margin-bottom: 2rem;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 450px) {
+  main div.card {
+    margin-bottom: 2rem;
+    height: 25rem;
+  }
+}
+
+@media (max-width: 250px) {
+  main div.card {
+    margin-bottom: 2rem;
+    height: 35rem;
+  }
+}
