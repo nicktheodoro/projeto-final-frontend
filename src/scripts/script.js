@@ -6,6 +6,7 @@ function pegarValoresDoForm(event) {
     return valorAtual.value;
   });
   console.log(listaDeValores);
+  alert("Formulário enviado com sucesso!")
 }
 
 function salvar(event) {
